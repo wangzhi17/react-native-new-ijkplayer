@@ -1,8 +1,7 @@
 {
   "name": "react-native-new-ijkplayer",
   "version": "1.0.0",
-  "react-native": "src/index",
-  "source": "src/index",
+  "description": "React Native ijkplayer for iOS, Android",
   "files": [
     "src",
     "android",
