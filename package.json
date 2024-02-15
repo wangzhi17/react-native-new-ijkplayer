@@ -1,0 +1,30 @@
+{
+  "name": "react-native-new-ijkplayer",
+  "version": "1.0.0",
+  "react-native": "src/index",
+  "source": "src/index",
+  "files": [
+    "src",
+    "android",
+    "ios",
+    "react-native-new-ijkplayer.podspec",
+    "!android/build",
+    "!ios/build",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__"
+  ],
+  "keywords": ["react-native", "ios", "android"],
+  "repository": "https://github.com/wangzhi17/react-native-new-ijkplayer",
+  "author": "Zhi Wang wangzhiqqdx@gmail.com (https://github.com/wangzhi17)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wangzhi17/react-native-new-ijkplayer/issues"
+  },
+  "homepage": "https://github.com/wangzhi17/react-native-new-ijkplayer#readme",
+  "devDependencies": {},
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  }
+}

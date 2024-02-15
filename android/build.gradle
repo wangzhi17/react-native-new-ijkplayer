@@ -1,0 +1,47 @@
+buildscript {
+  repositories {
+    google()
+    maven { url 'https://jitpack.io' }
+  }
+
+  dependencies {
+    classpath 'com.android.tools.build:gradle:1.2.3'
+  }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+  compileSdkVersion safeExtGet('compileSdkVersion', 33)
+  namespace "cn.wangzhi.ijkplayer"
+
+  defaultConfig {
+    minSdkVersion safeExtGet('minSdkVersion', 21)
+    targetSdkVersion safeExtGet('targetSdkVersion', 33)
+    versionCode 1
+    versionName "1.0"
+  }
+
+
+  lintOptions {
+    abortOnError false
+    warning 'InvalidPackage'
+  }
+}
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  implementation 'com.facebook.react:react-native:+'
+
+  implementation 'tv.danmaku.ijk.media:ijkplayer-java:0.6.0'
+
+  implementation 'tv.danmaku.ijk.media:ijkplayer-armv7a:0.6.0'
+  implementation 'tv.danmaku.ijk.media:ijkplayer-arm64:0.6.0'
+  implementation 'tv.danmaku.ijk.media:ijkplayer-x86:0.6.0'
+  implementation 'tv.danmaku.ijk.media:ijkplayer-x86_64:0.6.0'
+
+  implementation 'tv.danmaku.ijk.media:ijkplayer-exo:0.6.0'
+}
