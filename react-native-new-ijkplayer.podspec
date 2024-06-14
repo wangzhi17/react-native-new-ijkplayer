@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 
   s.source_files    = "ios/**/*.{h,m,mm,swift}"
   s.dependency "React"
-  s.dependency "IJKMediaFramework" '~>0.1.5'
+  s.dependency "IJKMediaFramework", '~>0.1.5'
 
   s.frameworks = "AVFoundation", "CoreMedia", 'VideoToolbox', 'AudioToolbox', 'Foundation','GLKit','CoreGraphics','CoreVideo','OpenGLES','QuartzCore','MediaPlayer','MobileCoreServices','UIKit'
 

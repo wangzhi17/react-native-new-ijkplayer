@@ -44,7 +44,7 @@ export default class RCTIJKPlayerView extends PureComponent {
   };
 
   componentDidMount() {
-    this.playBackStateChangeListener = NativeAppEventEmitter.addListener("PlayBackState", this._onPlayBackStateChange);
+    this.playBackStateChangeListener = NativeAppEventEmitter.addEventListener("PlayBackState", this._onPlayBackStateChange);
   }
 
   componentWillUnmount() {
